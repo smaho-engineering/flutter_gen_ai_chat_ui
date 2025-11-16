@@ -25,6 +25,7 @@ class InputOptions {
   final int? minLines;
   final bool sendOnEnter;
   final bool readOnly;
+  final bool enabled;
   final bool autocorrect;
 
   // Container and layout properties
@@ -115,6 +116,7 @@ class InputOptions {
     this.minLines = 1,
     this.sendOnEnter = true,
     this.readOnly = false,
+    this.enabled = true,
     this.autocorrect = true,
     this.margin,
     this.containerDecoration,
@@ -292,6 +294,7 @@ class InputOptions {
     int? minLines,
     bool? sendOnEnter,
     bool? readOnly,
+    bool? enabled,
     bool? autocorrect,
     EdgeInsets? margin,
     BoxDecoration? containerDecoration,
@@ -354,6 +357,7 @@ class InputOptions {
       minLines: minLines ?? this.minLines,
       sendOnEnter: sendOnEnter ?? this.sendOnEnter,
       readOnly: readOnly ?? this.readOnly,
+      enabled: enabled ?? this.enabled,
       autocorrect: autocorrect ?? this.autocorrect,
       margin: margin ?? this.margin,
       containerDecoration: containerDecoration ?? this.containerDecoration,
